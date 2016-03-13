@@ -1,0 +1,48 @@
+\documentclass[9pt,a4paper]{memoir}
+\usepackage{graphicx}
+\usepackage[sc]{mathpazo}
+\linespread{1.05}         % Palladio needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
+\setstocksize{52mm}{90mm}
+\setpagecc{49mm}{87mm}{*}
+\settypeblocksize{43mm}{81mm}{*}
+\setulmargins{3mm}{*}{*}
+\setlrmargins{3mm}{*}{*}
+
+\setheadfoot{0.1pt}{0.1pt}
+\setheaderspaces{1pt}{*}{*}
+\checkandfixthelayout[fixed]
+\pagestyle{empty}
+\usepackage{color}
+\begin{document}
+\noindent
+\begin{minipage}[c]{0.43\linewidth}
+  \includegraphics[keepaspectratio,width=0.83\textwidth]{UH-black.png}
+\end{minipage}
+\begin{minipage}[c]{0.7\linewidth}
+    \begin{raggedleft}
+      \Huge{\fontfamily{fosj}\selectfont \underline{Biocomputation}}
+    \end{raggedleft}
+\end{minipage}
+\vspace{0.5cm}
+\begin{Spacing}{0.9}
+  \hspace*{-\parindent}%
+  \begin{minipage}[c]{0.4\textwidth}
+    \begin{raggedright}
+    \textbf{Ankur Sinha} \\
+    \small{Ph.D. Candidate} \\
+    \small{Visiting Lecturer} \\
+    \end{raggedright}
+  \end{minipage}
+  \begin{minipage}[c]{0.6\textwidth}
+    \begin{raggedleft}
+      \textbf{University of Hertfordshire} \\
+      \small{Hatfield UK AL10 9AB} \\
+      \small{a.sinha2@herts.ac.uk} \\
+      \small{+44 7467299130} \\
+      \small{http://ankursinha.in/blog} \\
+    \end{raggedleft}
+  \end{minipage}
+\end{Spacing}
+\end{document}
