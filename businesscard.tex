@@ -1,12 +1,10 @@
 \documentclass[9pt,a4paper]{memoir}
 \usepackage{graphicx}
-\usepackage[sc]{mathpazo}
-\linespread{1.05}         % Palladio needs more leading (space between lines)
+\usepackage[default,osfigures,scale=0.95]{opensans}
 \usepackage[T1]{fontenc}
-\renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
-\setstocksize{52mm}{90mm}
-\setpagecc{49mm}{87mm}{*}
-\settypeblocksize{43mm}{81mm}{*}
+\setstocksize{58mm}{88mm}
+\setpagecc{55mm}{85mm}{*}
+\settypeblocksize{48mm}{78mm}{*}
 \setulmargins{3mm}{*}{*}
 \setlrmargins{3mm}{*}{*}
 
@@ -15,34 +13,39 @@
 \checkandfixthelayout[fixed]
 \pagestyle{empty}
 \usepackage{color}
+\definecolor{uh-blue}{RGB}{0,99,181}
 \begin{document}
 \noindent
-\begin{minipage}[c]{0.43\linewidth}
-  \includegraphics[keepaspectratio,width=0.83\textwidth]{UH-black.png}
+\begin{minipage}[c]{0.42\linewidth}
+  \includegraphics[keepaspectratio,width=\textwidth]{UH-blue.png}
 \end{minipage}
-\begin{minipage}[c]{0.7\linewidth}
+\begin{minipage}[c]{0.6\linewidth}
     \begin{raggedleft}
-      \Huge{\fontfamily{fosj}\selectfont \underline{Biocomputation}}
+      \Huge{\fontfamily{fosj}\selectfont \textcolor{uh-blue}{\underline{Biocomputation}}} \\
     \end{raggedleft}
 \end{minipage}
-\vspace{0.5cm}
-\begin{Spacing}{0.9}
+\begin{Spacing}{1}
   \hspace*{-\parindent}%
   \begin{minipage}[c]{0.4\textwidth}
     \begin{raggedright}
-    \textbf{Ankur Sinha} \\
-    \small{Ph.D. Candidate} \\
-    \small{Visiting Lecturer} \\
+    \LARGE{\textcolor{uh-blue}{Ankur Sinha}} \\
+    \footnotesize{Ph.D. Candidate} \\
+    \footnotesize{Visiting Lecturer} \\
     \end{raggedright}
   \end{minipage}
   \begin{minipage}[c]{0.6\textwidth}
     \begin{raggedleft}
-      \textbf{University of Hertfordshire} \\
-      \small{Hatfield UK AL10 9AB} \\
-      \small{a.sinha2@herts.ac.uk} \\
-      \small{+44 7467299130} \\
-      \small{http://ankursinha.in/blog} \\
+      \small{University of Hertfordshire} \\
+      \footnotesize{School of Computer Science} \\
+      \footnotesize{\underline{Hatfield UK AL10 9AB}} \\
+        \vspace{0.5mm}
+      \footnotesize{a.sinha2@herts.ac.uk} \\
+      \footnotesize{+44 (0)7467299130} \\
+      \footnotesize{http://ankursinha.in/blog} \\
     \end{raggedleft}
   \end{minipage}
 \end{Spacing}
+\begin{center}
+  \footnotesize{http://biocomputation.herts.ac.uk}
+\end{center}
 \end{document}
